@@ -23,9 +23,9 @@ class Icon {
     var image: UIImage?
     var rating = RatingType.Unrated
     
-    init(withTitle title: String, subTitle: String, imageName: String) {
+    init(withTitle title: String, subtitle: String, imageName: String?) {
         self.title = title
-        self.subTitle = subTitle
+        self.subTitle = subtitle
         if let imageName = imageName {
             if let iconImage = UIImage(named: imageName) {
                 image = iconImage

@@ -33,6 +33,10 @@
 		241A60CD210A89A8008C06D6 /* icons_winter_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 241A60B9210A89A8008C06D6 /* icons_winter_06.png */; };
 		241A60CE210A89A8008C06D6 /* summericons_100px_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 241A60BA210A89A8008C06D6 /* summericons_100px_03.png */; };
 		241A60D0210A89D8008C06D6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A60CF210A89D8008C06D6 /* Icon.swift */; };
+		FE1465DD2112BA310079B77C /* star_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1465DA2112BA310079B77C /* star_sel.png */; };
+		FE1465DE2112BA310079B77C /* eyeball.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1465DB2112BA310079B77C /* eyeball.png */; };
+		FE1465DF2112BA310079B77C /* star_uns.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1465DC2112BA310079B77C /* star_uns.png */; };
+		FE1465E22112BAB60079B77C /* IconSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1465E12112BAB60079B77C /* IconSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		241A60B9210A89A8008C06D6 /* icons_winter_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons_winter_06.png; sourceTree = "<group>"; };
 		241A60BA210A89A8008C06D6 /* summericons_100px_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summericons_100px_03.png; sourceTree = "<group>"; };
 		241A60CF210A89D8008C06D6 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		FE1465DA2112BA310079B77C /* star_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_sel.png; sourceTree = "<group>"; };
+		FE1465DB2112BA310079B77C /* eyeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeball.png; sourceTree = "<group>"; };
+		FE1465DC2112BA310079B77C /* star_uns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_uns.png; sourceTree = "<group>"; };
+		FE1465E12112BAB60079B77C /* IconSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,8 @@
 		241A6093210A891A008C06D6 /* TableViewCell_DisplayDifferentSeasons */ = {
 			isa = PBXGroup;
 			children = (
+				FE1465E02112BA6F0079B77C /* Model */,
+				FE1465D92112BA310079B77C /* Images */,
 				241A60A6210A898D008C06D6 /* Icons */,
 				241A6094210A891A008C06D6 /* AppDelegate.swift */,
 				241A6096210A891A008C06D6 /* ViewController.swift */,
@@ -110,7 +120,6 @@
 		241A60A6210A898D008C06D6 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				241A60CF210A89D8008C06D6 /* Icon.swift */,
 				241A60AD210A89A7008C06D6 /* icons_winter_01.png */,
 				241A60B8210A89A7008C06D6 /* icons_winter_02.png */,
 				241A60A7210A89A7008C06D6 /* icons_winter_03.png */,
@@ -133,6 +142,25 @@
 				241A60B7210A89A7008C06D6 /* summericons_100px_10.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		FE1465D92112BA310079B77C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FE1465DA2112BA310079B77C /* star_sel.png */,
+				FE1465DB2112BA310079B77C /* eyeball.png */,
+				FE1465DC2112BA310079B77C /* star_uns.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FE1465E02112BA6F0079B77C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				241A60CF210A89D8008C06D6 /* Icon.swift */,
+				FE1465E12112BAB60079B77C /* IconSet.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,16 +231,19 @@
 				241A60C0210A89A8008C06D6 /* summericons_100px_04.png in Resources */,
 				241A60C4210A89A8008C06D6 /* icons_winter_07.png in Resources */,
 				241A60C5210A89A8008C06D6 /* icons_winter_05.png in Resources */,
+				FE1465DF2112BA310079B77C /* star_uns.png in Resources */,
 				241A60CC210A89A8008C06D6 /* icons_winter_02.png in Resources */,
 				241A60CE210A89A8008C06D6 /* summericons_100px_03.png in Resources */,
 				241A60C3210A89A8008C06D6 /* summericons_100px_02.png in Resources */,
 				241A60BF210A89A8008C06D6 /* icons_winter_10.png in Resources */,
+				FE1465DE2112BA310079B77C /* eyeball.png in Resources */,
 				241A60C9210A89A8008C06D6 /* icons_winter_04.png in Resources */,
 				241A60C8210A89A8008C06D6 /* summericons_100px_07.png in Resources */,
 				241A609C210A891C008C06D6 /* Assets.xcassets in Resources */,
 				241A60BD210A89A8008C06D6 /* icons_winter_08.png in Resources */,
 				241A609A210A891A008C06D6 /* Main.storyboard in Resources */,
 				241A60BE210A89A8008C06D6 /* summericons_100px_01.png in Resources */,
+				FE1465DD2112BA310079B77C /* star_sel.png in Resources */,
 				241A60BC210A89A8008C06D6 /* summericons_100px_06.png in Resources */,
 				241A60C6210A89A8008C06D6 /* summericons_100px_05.png in Resources */,
 				241A60C7210A89A8008C06D6 /* summericons_100px_08.png in Resources */,
@@ -227,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				241A60D0210A89D8008C06D6 /* Icon.swift in Sources */,
+				FE1465E22112BAB60079B77C /* IconSet.swift in Sources */,
 				241A6097210A891A008C06D6 /* ViewController.swift in Sources */,
 				241A6095210A891A008C06D6 /* AppDelegate.swift in Sources */,
 			);
