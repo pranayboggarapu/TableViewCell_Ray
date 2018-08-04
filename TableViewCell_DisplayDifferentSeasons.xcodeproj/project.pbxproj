@@ -33,6 +33,7 @@
 		241A60CD210A89A8008C06D6 /* icons_winter_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 241A60B9210A89A8008C06D6 /* icons_winter_06.png */; };
 		241A60CE210A89A8008C06D6 /* summericons_100px_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 241A60BA210A89A8008C06D6 /* summericons_100px_03.png */; };
 		241A60D0210A89D8008C06D6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A60CF210A89D8008C06D6 /* Icon.swift */; };
+		FE06FA2F211636AA00777207 /* DisplayIconsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06FA2E211636AA00777207 /* DisplayIconsTableTableViewController.swift */; };
 		FE1465DD2112BA310079B77C /* star_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1465DA2112BA310079B77C /* star_sel.png */; };
 		FE1465DE2112BA310079B77C /* eyeball.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1465DB2112BA310079B77C /* eyeball.png */; };
 		FE1465DF2112BA310079B77C /* star_uns.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1465DC2112BA310079B77C /* star_uns.png */; };
@@ -68,6 +69,7 @@
 		241A60B9210A89A8008C06D6 /* icons_winter_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons_winter_06.png; sourceTree = "<group>"; };
 		241A60BA210A89A8008C06D6 /* summericons_100px_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summericons_100px_03.png; sourceTree = "<group>"; };
 		241A60CF210A89D8008C06D6 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		FE06FA2E211636AA00777207 /* DisplayIconsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DisplayIconsTableTableViewController.swift; path = TableViewCell_DisplayDifferentSeasons/DisplayIconsTableTableViewController.swift; sourceTree = "<group>"; };
 		FE1465DA2112BA310079B77C /* star_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_sel.png; sourceTree = "<group>"; };
 		FE1465DB2112BA310079B77C /* eyeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeball.png; sourceTree = "<group>"; };
 		FE1465DC2112BA310079B77C /* star_uns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_uns.png; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		241A6088210A891A008C06D6 = {
 			isa = PBXGroup;
 			children = (
+				FE06FA2E211636AA00777207 /* DisplayIconsTableTableViewController.swift */,
 				241A6093210A891A008C06D6 /* TableViewCell_DisplayDifferentSeasons */,
 				241A6092210A891A008C06D6 /* Products */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE06FA2F211636AA00777207 /* DisplayIconsTableTableViewController.swift in Sources */,
 				241A60D0210A89D8008C06D6 /* Icon.swift in Sources */,
 				FE1465E22112BAB60079B77C /* IconSet.swift in Sources */,
 				241A6097210A891A008C06D6 /* ViewController.swift in Sources */,
