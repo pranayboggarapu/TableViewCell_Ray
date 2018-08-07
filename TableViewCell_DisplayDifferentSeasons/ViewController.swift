@@ -9,18 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var IconSets  = [IconSet]()
 
-    var icons =  [Icon]()
+//    var icons =  [Icon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
+        IconSets = IconSet.iconSets()
         
-        for iconSet in IconSet.iconSets() {
-            for individualIcon in iconSet.icons {
-            icons.append(individualIcon)
-            }
-        }
         
     }
 
@@ -32,18 +30,19 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return IconSets.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return icons.count
+        return IconSets[section].icons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "iconCell", for: indexPath)
         
-        let icon = icons[indexPath.row]
+        let icon = IconSets[indexPath.section].icons[indexPath.row]
+    
         
         cell.textLabel?.text = icon.title
         cell.detailTextLabel?.text = icon.subTitle
@@ -52,6 +51,13 @@ extension ViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return IconSets[section].name
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return ""
     }
     
 }
