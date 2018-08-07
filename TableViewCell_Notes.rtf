@@ -106,6 +106,20 @@ Group - header will go away when we scroll\
 \
 \
 \
+Deleting Rows\
+Swipe left\
+\
+For delete, tableView(_:commitEditingStyle)\
+\
+	delete from your model\
+	tell the view about the delete\
+		Table view reload data - no animation seen happens in background\
+		table view delete row at index path\
+\
+Easier way to delete cell \'97> Edit button\
+\
+Edit Button item \'97> setEditing(_:animated) \'97> UITableViewController \'97> editing = xxx \'97> tableview.setEditing(_:animated)\
+\
 \
 \
 }

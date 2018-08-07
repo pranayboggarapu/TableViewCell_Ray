@@ -12,12 +12,15 @@ class ViewController: UIViewController {
     
     var IconSets  = [IconSet]()
 
-//    var icons =  [Icon]()
+    @IBOutlet weak var prettyIconsTableView: UITableView!
+    
+    //    var icons =  [Icon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
         IconSets = IconSet.iconSets()
+        navigationItem.rightBarButtonItem = editButtonItem
         
         
     }
@@ -28,6 +31,15 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDataSource {
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            prettyIconsTableView.setEditing(true, animated: true)
+        } else {
+            prettyIconsTableView.setEditing(false, animated: true)
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return IconSets.count
@@ -59,6 +71,17 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return ""
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let set = IconSets[indexPath.section]
+            set.icons.remove(at: indexPath.row)
+            //tableView.reloadData()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    
     
 }
 
