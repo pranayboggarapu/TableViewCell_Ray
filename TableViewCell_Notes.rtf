@@ -121,5 +121,19 @@ Easier way to delete cell \'97> Edit button\
 Edit Button item \'97> setEditing(_:animated) \'97> UITableViewController \'97> editing = xxx \'97> tableview.setEditing(_:animated)\
 \
 \
+Adding Rows\
+\
+Display Add New Row\
+1. tableView(_:numberOfRowsInSection)\
+2. tableView(_:cellForRowAtIndexPath)\
+3. setEditing(_:animated)\
+4. tableView(_:commitEditingStyle:forRowAtIndexPath:)\
+\
+Handle \'93insert row\'94 event\
+\
+tableView(_:commitEditingStyle:forRowAtIndexPath:)\
+tableView(_:didSelectRowAtIndexPath)\
+\
+\
 \
 }
